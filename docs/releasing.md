@@ -1,8 +1,8 @@
-<!-- Space: AnsibleRoleTemplate -->
+<!-- Space: AnsibleRoleK3s -->
 <!-- Parent: Project -->
 <!-- Title: Project Releasing -->
 
-<!-- Label: AnsibleRoleTemplate -->
+<!-- Label: AnsibleRoleK3s -->
 <!-- Label: Project -->
 <!-- Label: Releasing -->
 <!-- Include: docs/disclaimer.md -->
@@ -12,7 +12,7 @@
 
 ## Bump a new version
 
-Make a new version of ansible-role-template in the following steps:
+Make a new version of ansible-role-k3s in the following steps:
 
 ### Generate version major
 

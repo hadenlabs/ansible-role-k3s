@@ -3,6 +3,6 @@
   template:
     src: '{{ item.template }}'
     dest: '{{ item.path  }}'
-  with_items: '{{ _ansible-role-name_templates | default({}) }}'
+  with_items: '{{ _k3s_templates | default({}) }}'
   when:
-    - _ansible-role-name_templates is defined
+    - _k3s_templates is defined

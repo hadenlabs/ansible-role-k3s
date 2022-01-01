@@ -1,8 +1,8 @@
-<!-- Space: AnsibleRoleTemplate -->
+<!-- Space: AnsibleRoleK3s -->
 <!-- Parent: Project -->
 <!-- Title: Project Troubleshooting -->
 
-<!-- Label: AnsibleRoleTemplate -->
+<!-- Label: AnsibleRoleK3s -->
 <!-- Label: Project -->
 <!-- Label: Troubleshooting -->
 <!-- Include: docs/disclaimer.md -->

@@ -1,2 +1,2 @@
 ---
-ansible-role-name_only_deploy: true
+k3s_only_deploy: true
