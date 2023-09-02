@@ -5,7 +5,7 @@
 
 - name: Install k3s package dependencies
   ansible.builtin.package:
-    name: '{{ k3s_packages }}'
+    name: "{{ k3s_packages }}"
     state: present
   become: true
   register: install_k3s_packages

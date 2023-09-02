@@ -1,6 +1,3 @@
- <!-- Space: AnsibleRoleK3s -->
-<!-- Title: Project -->
-
 <!--
 
 
@@ -15,7 +12,7 @@
 
   -->
 
-[![Latest Release](https://img.shields.io/github/release/hadenlabs/ansible-role-k3s)](https://github.com/hadenlabs/ansible-role-k3s/releases) [![Lint](https://img.shields.io/github/workflow/status/hadenlabs/ansible-role-k3s/lint-code)](https://github.com/hadenlabs/ansible-role-k3s/actions?workflow=lint-code) [![pre-commit](https://img.shields.io/badge/pre--commit-enabled-brightgreen?logo=pre-commit&logoColor=white)](https://github.com/pre-commit/pre-commit) [![Conventional Commits](https://img.shields.io/badge/Conventional%20Commits-1.0.0-yellow)](https://conventionalcommits.org)
+[![Latest Release](https://img.shields.io/github/release/hadenlabs/ansible-role-k3s)](https://github.com/hadenlabs/ansible-role-k3s/releases) [![Lint](https://img.shields.io/github/workflow/status/hadenlabs/ansible-role-k3s/lint-code)](https://github.com/hadenlabs/ansible-role-k3s/actions?workflow=lint-code) [![CI](https://img.shields.io/github/workflow/status/hadenlabs/ansible-role-k3s/ci)](https://github.com/hadenlabs/ansible-role-k3s/actions?workflow=ci) [![Test](https://img.shields.io/github/workflow/status/hadenlabs/ansible-role-k3s/test)](https://github.com/hadenlabs/ansible-role-k3s/actions?workflow=test) [![pre-commit](https://img.shields.io/badge/pre--commit-enabled-brightgreen?logo=pre-commit&logoColor=white)](https://github.com/pre-commit/pre-commit) [![Conventional Commits](https://img.shields.io/badge/Conventional%20Commits-1.0.0-yellow)](https://conventionalcommits.org) [![KeepAChangelog](https://img.shields.io/badge/changelog-Keep%20a%20Changelog%20v1.0.0-orange)](https://keepachangelog.com)
 
 # ansible-role-k3s
 
@@ -23,7 +20,7 @@ ansible-role-k3s for hadenlabs.
 
 ## Requirements
 
-This is a list of applications that need to be installed previously to enjoy all the goodies of this configuration:
+This is a list of plugins that need to be installed previously to enjoy all the goodies of this configuration:
 
 - [gomplate](https://github.com/hairyhenderson/gomplate)
 - [python](https://www.python.org)
@@ -31,18 +28,17 @@ This is a list of applications that need to be installed previously to enjoy all
 
 ## Usage
 
-```bash
-  ansible-galaxy install hadenlabs.k3s
-```
+# How to use this project
 
-Full working examples can be found in [examples](./examples) folder.
+```bash
+task setup
+```
 
 ## Examples
 
-<!-- Space: AnsibleRoleK3s -->
+<!-- Space: Projects -->
 <!-- Parent: Project -->
 <!-- Title: Project Examples -->
-
 <!-- Label: Examples -->
 <!-- Include: docs/disclaimer.md -->
 <!-- Include: ac:toc -->
@@ -94,7 +90,7 @@ Using the given version number of `MAJOR.MINOR.PATCH`, we apply the following co
 
 ## Copyright
 
-Copyright © 2018-2022 [Hadenlabs](https://hadenlabs.com)
+Copyright © 2018-2023 [Hadenlabs](https://hadenlabs.com)
 
 ## Trademarks
 

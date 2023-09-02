@@ -1,4 +1,4 @@
-version: '3'
+version: "3"
 
 tasks:
   check:
@@ -11,14 +11,14 @@ tasks:
     desc: Exist module molecule
     run: once
     preconditions:
-      - sh: test "pipenv run command -v molecule"
-        msg: 'Please Install molecule'
+      - sh: test "poetry run command -v molecule"
+        msg: "Please Install molecule"
 
   test:
     desc: run test molecule.
     run: once
     cmds:
-      - pipenv run molecule test --all --destroy=always
+      - poetry run molecule test --all --destroy=always
     deps:
       - task: check
 
@@ -26,6 +26,6 @@ tasks:
     desc: create scenario molecule.
     run: once
     cmds:
-      - pipenv run molecule init scenario {{.SCENARIO}} --driver-name=docker --provisioner-name=ansible --role-name=ansible-role-k3s
+      - poetry run molecule init scenario {{.SCENARIO}} --driver-name=docker --provisioner-name=ansible --role-name=ansible-role-k3s
     deps:
       - task: check

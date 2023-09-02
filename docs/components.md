@@ -1,11 +1,10 @@
-<!-- Space: AnsibleRoleK3s -->
-<!-- Parent: Project -->
-<!-- Title: Components -->
-
-<!-- Label: AnsibleRoleK3s -->
+<!-- Space: Projects -->
+<!-- Parent: AnsibleRoleK3S -->
+<!-- Title: Components AnsibleRoleK3S -->
+<!-- Label: AnsibleRoleK3S -->
 <!-- Label: Project -->
 <!-- Label: Components -->
-<!-- Include: docs/disclaimer.md -->
+<!-- Include: disclaimer.md -->
 <!-- Include: ac:toc -->
 
-# components
+# Components

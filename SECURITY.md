@@ -1,3 +1,11 @@
+<!-- Space: Projects -->
+<!-- Parent: AnsibleRoleK3S -->
+<!-- Title: Security AnsibleRoleK3S -->
+<!-- Label: AnsibleRoleK3S -->
+<!-- Label: Security -->
+<!-- Include: docs/disclaimer.md -->
+<!-- Include: ac:toc -->
+
 # Security Policy
 
 ## Reporting a Security Bug

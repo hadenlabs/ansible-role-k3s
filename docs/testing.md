@@ -1,17 +1,11 @@
-<!-- Space: AnsibleRoleK3s -->
-<!-- Parent: Project -->
-<!-- Title: Project Testing -->
-
-<!-- Label: Testing -->
-<!-- Include: docs/disclaimer.md -->
-<!-- Include: ac:toc -->
-
 # Testing
 
-## Running tests
+## Running all tests
 
 ```bash
-pipenv run molecule test
+task test
 ```
+
+## Running tests
 
 ## Running tests Syntax

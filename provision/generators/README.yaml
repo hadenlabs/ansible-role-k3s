@@ -14,15 +14,11 @@ tags:
 email:
   support: support@hadenlabs.com
 
-confluence:
-  space: AnsibleRoleK3s
-  title: Project
-
 # Logo for this project
-#logo: docs/logo.png
+# logo: docs/logo.png
 
 # License of this project
-license: 'LGPL-3.0'
+license: "LGPL-3.0"
 
 # Canonical GitHub repo
 github_repo: hadenlabs/ansible-role-k3s
@@ -35,16 +31,25 @@ badges:
   - name: Lint
     image: https://img.shields.io/github/workflow/status/hadenlabs/ansible-role-k3s/lint-code
     url: https://github.com/hadenlabs/ansible-role-k3s/actions?workflow=lint-code
+  - name: CI
+    image: https://img.shields.io/github/workflow/status/hadenlabs/ansible-role-k3s/ci
+    url: https://github.com/hadenlabs/ansible-role-k3s/actions?workflow=ci
+  - name: Test
+    image: https://img.shields.io/github/workflow/status/hadenlabs/ansible-role-k3s/test
+    url: https://github.com/hadenlabs/ansible-role-k3s/actions?workflow=test
   - name: pre-commit
     image: https://img.shields.io/badge/pre--commit-enabled-brightgreen?logo=pre-commit&logoColor=white
     url: https://github.com/pre-commit/pre-commit
   - name: Conventional Commits
     image: https://img.shields.io/badge/Conventional%20Commits-1.0.0-yellow
     url: https://conventionalcommits.org
+  - name: KeepAChangelog
+    image: https://img.shields.io/badge/changelog-Keep%20a%20Changelog%20v1.0.0-orange
+    url: https://keepachangelog.com
 
 requirements: |-
 
-  This is a list of applications that need to be installed previously to enjoy all the goodies of this configuration:
+  This is a list of plugins that need to be installed previously to enjoy all the goodies of this configuration:
 
   - [gomplate](https://github.com/hairyhenderson/gomplate)
   - [python](https://www.python.org)
@@ -63,8 +68,11 @@ usage: |-
 
   Full working examples can be found in [examples](./examples) folder.
 
+usages:
+  - docs/usage.md
+
 examples:
-  - 'docs/examples/common.md'
+  - "docs/examples/common.md"
 
 include:
-  - 'docs/include/ansible.md'
+  - "docs/include/ansible.md"
