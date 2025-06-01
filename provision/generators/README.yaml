@@ -29,6 +29,9 @@ github_repo: hadenlabs/ansible-role-k3s
 
 # Badges to display
 badges:
+  - name: Version
+    image: https://img.shields.io/badge/version-0.0.0-df5e88
+    url: https://github.com/hadenlabs/ansible-role-k3s
   - name: Latest Release
     image: https://img.shields.io/github/release/hadenlabs/ansible-role-k3s
     url: https://github.com/hadenlabs/ansible-role-k3s/releases
