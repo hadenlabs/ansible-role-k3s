@@ -1,3 +1,6 @@
+ <!-- Space: AnsibleRoleK3s -->
+<!-- Title: Project -->
+
 <!--
 
 
@@ -12,7 +15,7 @@
 
   -->
 
-[![Latest Release](https://img.shields.io/github/release/hadenlabs/ansible-role-k3s)](https://github.com/hadenlabs/ansible-role-k3s/releases) [![Lint](https://img.shields.io/github/workflow/status/hadenlabs/ansible-role-k3s/lint-code)](https://github.com/hadenlabs/ansible-role-k3s/actions?workflow=lint-code) [![CI](https://img.shields.io/github/workflow/status/hadenlabs/ansible-role-k3s/ci)](https://github.com/hadenlabs/ansible-role-k3s/actions?workflow=ci) [![Test](https://img.shields.io/github/workflow/status/hadenlabs/ansible-role-k3s/test)](https://github.com/hadenlabs/ansible-role-k3s/actions?workflow=test) [![pre-commit](https://img.shields.io/badge/pre--commit-enabled-brightgreen?logo=pre-commit&logoColor=white)](https://github.com/pre-commit/pre-commit) [![Conventional Commits](https://img.shields.io/badge/Conventional%20Commits-1.0.0-yellow)](https://conventionalcommits.org) [![KeepAChangelog](https://img.shields.io/badge/changelog-Keep%20a%20Changelog%20v1.0.0-orange)](https://keepachangelog.com)
+[![Version](https://img.shields.io/badge/version-0.0.0-df5e88)](https://github.com/hadenlabs/ansible-role-k3s) [![Latest Release](https://img.shields.io/github/release/hadenlabs/ansible-role-k3s)](https://github.com/hadenlabs/ansible-role-k3s/releases) [![Lint](https://img.shields.io/github/workflow/status/hadenlabs/ansible-role-k3s/lint-code)](https://github.com/hadenlabs/ansible-role-k3s/actions?workflow=lint-code) [![pre-commit](https://img.shields.io/badge/pre--commit-enabled-brightgreen?logo=pre-commit&logoColor=white)](https://github.com/pre-commit/pre-commit) [![Conventional Commits](https://img.shields.io/badge/Conventional%20Commits-1.0.0-yellow)](https://conventionalcommits.org) [![KeepAChangelog](https://img.shields.io/badge/changelog-Keep%20a%20Changelog%20v1.0.0-orange)](https://keepachangelog.com)
 
 # ansible-role-k3s
 
@@ -20,7 +23,7 @@ ansible-role-k3s for hadenlabs.
 
 ## Requirements
 
-This is a list of plugins that need to be installed previously to enjoy all the goodies of this configuration:
+This is a list of applications that need to be installed previously to enjoy all the goodies of this configuration:
 
 - [gomplate](https://github.com/hairyhenderson/gomplate)
 - [python](https://www.python.org)
@@ -30,27 +33,72 @@ This is a list of plugins that need to be installed previously to enjoy all the 
 
 # How to use this project
 
-```bash
-task setup
+## Generate file `requirements.yml`
+
+```yaml
+- name: hadenlabs.ansible-role-name
+  src: git+https://github.com/hadenlabs/ansible-role-k3s
+  version: 0.0.0
 ```
+
+### Execute:
+
+```bash
+ansible-galaxy install -r requirements.yml
+```
+
+# How to use this project
+
+```bash
+ansible-galaxy install hadenlabs.ansible-role-name
+agr 'ansible-role-k3s' 'new-project'
+agr 'AnsibleRoleK3s' 'NewProject'
+agr 'ansible-role-name' 'project'
+```
+
+Full working examples can be found in [examples](/examples) folder.
+
+# Links
+
+- See [Configure](/docs/usage/configure.md)
 
 ## Examples
 
 <!-- Space: Projects -->
-<!-- Parent: Project -->
-<!-- Title: Project Examples -->
+<!-- Parent: AnsibleRoleK3s -->
+<!-- Title: Examples AnsibleRoleK3s -->
 <!-- Label: Examples -->
-<!-- Include: docs/disclaimer.md -->
+<!-- Include: ./../disclaimer.md -->
 <!-- Include: ac:toc -->
 
-## basic
+## Common
 
-To run this playbook with default settings, create a basic playbook like this:
+### Install Dependencies
 
-```{.yaml}
-- hosts: servers
+```bash
+task setup
+```
+
+## packages
+
+To run this playbook with default settings, for install package like this:
+
+generate file `requirements.yml`
+
+```yaml
+- name: hadenlabs.ansible-role-k3s
+  src: git+https://github.com/hadenlabs/ansible-role-k3s
+  version: /main
+```
+
+```yaml
+- hosts: all
+
   roles:
-    - hadenlabs.k3s
+    - role: hadenlabs.ansible-role-k3s
+      become: true
+      vars:
+        ansible-role-k3s_owner: ubuntu
 ```
 
 ## Requirements
@@ -65,7 +113,7 @@ The default role variables in `defaults/main.yml` are:
 
 ## Help
 
-**Got a question?**
+### Got a question?
 
 File a GitHub [issue](https://github.com/hadenlabs/ansible-role-k3s/issues).
 
@@ -90,7 +138,7 @@ Using the given version number of `MAJOR.MINOR.PATCH`, we apply the following co
 
 ## Copyright
 
-Copyright © 2018-2023 [Hadenlabs](https://hadenlabs.com)
+Copyright © 2018-2025 [Hadenlabs](https://hadenlabs.com)
 
 ## Trademarks
 
