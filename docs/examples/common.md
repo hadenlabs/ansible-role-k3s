@@ -1,16 +1,36 @@
 <!-- Space: Projects -->
-<!-- Parent: Project -->
-<!-- Title: Project Examples -->
+<!-- Parent: AnsibleRoleK3s -->
+<!-- Title: Examples AnsibleRoleK3s -->
 <!-- Label: Examples -->
-<!-- Include: docs/disclaimer.md -->
+<!-- Include: ./../disclaimer.md -->
 <!-- Include: ac:toc -->
 
-## basic
+## Common
 
-To run this playbook with default settings, create a basic playbook like this:
+### Install Dependencies
 
-```{.yaml}
-- hosts: servers
+```bash
+task setup
+```
+
+## packages
+
+To run this playbook with default settings, for install package like this:
+
+generate file `requirements.yml`
+
+```yaml
+- name: hadenlabs.ansible-role-k3s
+  src: git+https://github.com/hadenlabs/ansible-role-k3s
+  version: /main
+```
+
+```yaml
+- hosts: all
+
   roles:
-    - hadenlabs.k3s
+    - role: hadenlabs.ansible-role-k3s
+      become: true
+      vars:
+        ansible-role-k3s_owner: ubuntu
 ```

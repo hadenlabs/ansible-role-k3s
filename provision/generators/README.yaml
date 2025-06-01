@@ -14,6 +14,10 @@ tags:
 email:
   support: support@hadenlabs.com
 
+confluence:
+  space: AnsibleRoleK3s
+  title: Project
+
 # Logo for this project
 # logo: docs/logo.png
 
@@ -31,12 +35,6 @@ badges:
   - name: Lint
     image: https://img.shields.io/github/workflow/status/hadenlabs/ansible-role-k3s/lint-code
     url: https://github.com/hadenlabs/ansible-role-k3s/actions?workflow=lint-code
-  - name: CI
-    image: https://img.shields.io/github/workflow/status/hadenlabs/ansible-role-k3s/ci
-    url: https://github.com/hadenlabs/ansible-role-k3s/actions?workflow=ci
-  - name: Test
-    image: https://img.shields.io/github/workflow/status/hadenlabs/ansible-role-k3s/test
-    url: https://github.com/hadenlabs/ansible-role-k3s/actions?workflow=test
   - name: pre-commit
     image: https://img.shields.io/badge/pre--commit-enabled-brightgreen?logo=pre-commit&logoColor=white
     url: https://github.com/pre-commit/pre-commit
@@ -49,7 +47,7 @@ badges:
 
 requirements: |-
 
-  This is a list of plugins that need to be installed previously to enjoy all the goodies of this configuration:
+  This is a list of applications that need to be installed previously to enjoy all the goodies of this configuration:
 
   - [gomplate](https://github.com/hairyhenderson/gomplate)
   - [python](https://www.python.org)
@@ -61,15 +59,8 @@ description: |-
   ansible-role-k3s for hadenlabs.
 
 # How to use this project
-usage: |-
-  ```bash
-    ansible-galaxy install hadenlabs.k3s
-  ```
-
-  Full working examples can be found in [examples](./examples) folder.
-
 usages:
-  - docs/usage.md
+  - docs/usage/main.md
 
 examples:
   - "docs/examples/common.md"

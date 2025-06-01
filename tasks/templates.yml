@@ -1,8 +1,0 @@
----
-- name: copy templates
-  template:
-    src: "{{ item.template }}"
-    dest: "{{ item.path  }}"
-  with_items: "{{ _k3s_templates | default({}) }}"
-  when:
-    - _k3s_templates is defined

@@ -9,14 +9,54 @@
 
 # Commands
 
+## Poetry
+
 ## Taskfile
+
+### SSH
+
+#### Make Export
+
+```bash
+task ssh:make:export STAGE=core
+```
+
+### Sops
+
+#### Make
+
+```bash
+task sops:make
+```
+
+### Molecule
+
+#### Test Molecule
+
+```bash
+task molecule:test
+```
+
+#### Create Scenario
+
+```bash
+task molecule:scenario SCENARIO=name
+```
+
+### Generate Readme
+
+```{.bash}
+task readme
+```
+
+## Documentation
 
 ### Confluence
 
 #### Sync Markdown with confluence
 
 ```{.bash}
-task confluence:sync:all
+task mark:sync
 ```
 
 ### Python
@@ -75,18 +115,4 @@ task version:minor
 
 ```{.bash}
 task version:patch
-```
-
-### Docs
-
-#### build
-
-```{.bash}
-task docs:build
-```
-
-#### server
-
-```{.bash}
-task docs:serve
 ```

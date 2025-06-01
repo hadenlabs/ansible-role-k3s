@@ -1,8 +1,0 @@
----
-# vars file for k3s
-
-_root_group: root
-_k3s_packages:
-  - software-properties-common
-  - python-software-properties
-  - wget
